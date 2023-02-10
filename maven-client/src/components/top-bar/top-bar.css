@@ -1,0 +1,74 @@
+.top-bar{
+    border: 8px;width: 100%;background: #FFFFFF;
+    box-shadow: 1px 1px 8px rgb(0 0 0 / 10%);height: 8vh;
+}
+.maven-header{
+
+    width: 123px;
+    height: 44px;
+    left: 6vw;
+    top: 2vh;
+    
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+}
+
+.mail-header{
+    position: absolute;
+    width: 234px;
+    height: 25px;
+    left: 70%;
+    top: 3.3%;
+}
+.mail-icon{
+    position: absolute;
+    width: 33px;
+    height: 28px;
+    left: 68.5%;
+    top: 3%;
+background: url("../../assets/top-bar/email.png") no-repeat;
+}
+.user-avatar{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 86%;
+    top: 1.5%;
+background: url("../../assets/top-bar/avatar.png") no-repeat;
+}
+
+.user-name{
+    position: absolute;
+    left: 89.43%;
+    /* right: 2.64%; */
+    top: 3.77%;
+    bottom: 94.69%;
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+    width: 10vw;
+}
+.user-wellcome{
+    position: absolute;
+    left: 87.43%;
+    right: 2.64%;
+    top: 1.77%;
+    bottom: 94.69%;
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+}

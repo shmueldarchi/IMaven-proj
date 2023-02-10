@@ -1,0 +1,19 @@
+.arrow{
+    background: url("../../assets/carusel/Arrow.png") no-repeat;
+    width: 3vw;
+    height: 7vh;
+    position: absolute;
+    top: 42%;
+    background-size: 2vw 6vh;
+    border: 0px;
+}
+.left{
+    transform: rotate(-180deg);
+    left: 17vw;
+    border-radius: 14px;
+}
+
+.right{
+    right: 0vw;
+    border-radius: 14px;
+}

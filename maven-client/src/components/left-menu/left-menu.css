@@ -1,0 +1,24 @@
+.maven-header{
+    position: unset;
+display: flex;
+    width: 123px;
+    height: 44px;
+    left: 6vw;
+    top: 2vh;
+    
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+}
+.left-menu{
+    background-color: #499EDC;
+    height: 100%;
+    color: white;
+}

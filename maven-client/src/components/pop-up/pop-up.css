@@ -1,0 +1,248 @@
+.popup-body{
+    width: 38.1%;
+    height: 40%;
+    display: flex;
+    position: absolute;
+    left: 32vw;
+    background: white;
+    top: 23vh;
+    opacity: 1;
+    z-index: 10001;
+    flex-direction: column;
+}
+.popup-header{
+    width:38.1%;
+    height: 30%;
+    display: flex;
+}
+.popup-dropdown{
+    width:38.1%;
+    height: 30%;
+    display: flex;
+}
+.popup-text-input{
+    width:38.1%;
+    height: 30%;
+    display: flex;
+}
+.popup-button{
+    width:38.1%;
+    height: 30%;
+    display: flex;
+}
+.popup-background{
+    width:100%;
+    height: 100%;
+    display: flex;
+    z-index: 10000;
+    position: absolute;
+    background-color:#151414 ;
+    opacity: 0.7;
+    left: 0;
+}
+.close-btn{
+    background-color: #499EDC;
+    width: 15px;
+    height: 15px;
+    border-radius: 90%;
+    position: absolute;
+    z-index: 10002;
+    left: 69.5%;
+    top: 22.5%;
+    font-size: 0.5em;
+    cursor: pointer;
+    line-height: 13px;
+    color: white;
+}
+
+.popup-body-edit{
+    width: 26%;
+    height: 99%;
+    display: flex;
+    position: absolute;
+    left: 42vw;
+    top: 0vh;
+    opacity: 1;
+    z-index: 10001;
+    flex-direction: column;
+    border-radius: 13%;
+}
+
+.popup-body-connector{
+    width: 30.1%;
+    height: 37%;
+    display: flex;
+    position: absolute;
+    left: 40vw;
+    background: white;
+    top: 23vh;
+    opacity: 1;
+    z-index: 10001;
+    flex-direction: column;
+}
+.close-btn-edit{
+    background-color: #499EDC;
+    width: 0.7%;
+    height: 1.3%;
+    border-radius: 90%;
+    position: absolute;
+    z-index: 10002;
+    left: 65%;
+    top: 9%;
+    font-size: 0.5em;
+    cursor: pointer;
+}
+
+.save-btn-edit{
+    background-color: #499edc !important;
+
+    width: 38.5%;
+    height: 134%;
+
+    position: relative;
+    top: 0;
+    left: -4vw;
+}
+.finish-btn-edit{
+    background-color: #149949 !important;
+    /* left: 16%; */
+    width: 38.5%;
+    height: 134%;
+    left: -4.8vw;
+}
+
+.button-create{
+    background: #499EDC!important;
+    width: 8vw;
+    height: 4vh;
+    font-size: 1em !important;
+    border-radius: 7px!important;
+    text-transform: none!important;
+}
+
+a { 
+    font: 'general';
+  font-family:'arial, helvetica, sans-serif';
+  font-size: calc(.065*100px)    ;
+  text-decoration: none;
+  color : white;
+}
+a:focus, a:hover{
+    background: alpha(orange, .4) !important
+}
+
+.ring1{
+  position :relative;
+  margin: 0 0 0 auto;
+  width: 100px;
+  overflow :hidden;
+  transform:rotate(90deg);
+}
+
+ul{
+    position :relative;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: calc(1010px * 2);
+  height: calc(100px * 2);
+  border-radius: 100px;
+  overflow :hidden;
+}
+  li{
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform-origin: top right;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+  }
+
+  li:nth-of-type(1){
+    transform: rotate(60deg);
+    background: #499EDC;
+  }
+  li:nth-of-type(2){
+    transform: rotate(40deg);
+    background: #499EDC;
+}
+  li:nth-of-type(3){
+    transform: rotate(20deg);
+    background :#499EDC;
+  }
+  li:nth-of-type(4){
+    transform: rotate(0deg);
+    background: #499EDC;
+  }
+
+  li:nth-of-type(5){
+    transform: rotate(-20deg);
+    background: #499EDC
+  }
+
+ li> a    {
+    display: block;
+    margin: calc(-.2*24px) 0 0 calc(-.1*100px);
+    padding: calc(.25*24px) 0 0 calc(.15*100px);
+    box-sizing: border-box;
+    width: 100%;
+    height: 120%;
+    transform: rotate(-5deg);
+    transform-origin: top right;
+  } 
+          
+ .center{
+  display:block;
+  position :absolute;
+  top: 25%;
+  right: -50%;
+  width :100px;
+  height: 100px;
+   border-radius: calc(100px);
+  z-index: 10;
+  background :white;
+  /* overflow: hidden; */
+
+
+ }
+ .center a { 
+    display: block;
+    transform: rotate(0);
+    width: 100%;
+    height: 100%;
+    padding:46% 0 0 20%;
+    box-sizing: border-box;
+  }
+
+  .fan-menu {
+    position: relative;
+  }
+
+  
+  .menu-items.open {
+    display: flex;
+  }
+  
+  .menu-item {
+    transform: rotate(30deg) translate(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 0 10px;
+    background-color: #ccc;
+  }
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }

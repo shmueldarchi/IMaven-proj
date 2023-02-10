@@ -1,0 +1,39 @@
+.boards-number{
+    font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: 450;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+color: #B9B9B9;
+}
+
+.ticket-name{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #333333;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.Category{
+
+}
+
+.Laptop{
+
+}
+
+.Medicine{
+
+}
+
+.Renovation{
+
+}
+
