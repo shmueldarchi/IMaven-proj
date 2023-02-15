@@ -22,7 +22,7 @@ function EditTamplate() {
     const [sectionTwo, setSectionTwo] = useState("");
     const [sectionThree, setSectionThree] = useState("");
 
-    const [sections, setSection] = useState({ name, });
+    const [sections, setSection] = useState({});
 
     const [name, setName] = useState("");
 

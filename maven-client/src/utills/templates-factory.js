@@ -60,36 +60,52 @@ export const sliderTemplates = [
 export function generateTamplate(kind, callback) {
     switch (kind) {
         case "Slider":
-            
-            return sliderGenerate();
+            return sliderGenerate(callback);
             break;
         case "Text":
-            return textGenerate();
+            return textGenerate(callback);
             break;
         case "Video":
-
             break;
         case "Image":
-            return imageGenerate();
+            return imageGenerate(callback);
             break;
         case "Checkbox":
-            return checkBoxGenerate();
+            return checkBoxGenerate(callback);
             break;
         case "Radiobutton":
-            return  radioButtonGenerate();
+            return  radioButtonGenerate(callback);
             break;
         default:
+            headerGenerate(callback);
             break;
     }
+}
+
+export function generateHeader(callback) {
+   return  headerGenerate(callback);
 }
 function baseTamplate() {
 
 }
-export function checkBoxGenerate() {
+function handleChange(event,callBack){
+    console.log();
+    callBack(event.target.value)
+}
+
+function headerGenerate(callBack) {
+    return (
+        <div id='header-editable' contentEditable={true} onChange={handleChange(callBack)}>
+            Header
+            </div>
+    );
+}
+
+export function checkBoxGenerate(callBack) {
     
     return (
         <div>
-            <div contentEditable="true">Question</div>
+            <div contentEditable="true" onChange={handleChange(callBack)}>Question</div>
             <FormGroup>
                <CheckboxControl/>
                <CheckboxControl/>
@@ -99,7 +115,7 @@ export function checkBoxGenerate() {
     );
 }
 
-function radioButtonGenerate() {
+function radioButtonGenerate(callBack) {
     return (
         <FormControl>
             <FormLabel contentEditable="true" id="demo-radio-buttons-group-label">Gender</FormLabel>
@@ -115,7 +131,7 @@ function radioButtonGenerate() {
     );
 }
 
-function sliderGenerate() {
+function sliderGenerate(callBack) {
     return (
         <Box>
             <SliderControl
@@ -134,14 +150,14 @@ function sliderGenerate() {
 function videoGenerate() {
 
 }
-function textGenerate() {
+function textGenerate(callBack) {
 return(
     <div>
         <TextControl/>
     </div>
 )
 }
-function imageGenerate() {
+function imageGenerate(callBack) {
 return(
     <ImageControl/>
 )
